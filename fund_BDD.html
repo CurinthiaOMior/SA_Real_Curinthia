@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
+<!-- falta código -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,88 +24,136 @@
         </select>
     </header>
     <main>
+        <section id="inicio">
+            <div>
+                <h1>Fundamentos de Banco de Dados</h1>
+            </div>
+        </section>
+        <div id="outline"></div>
+        <section>
+            <div class="texto-esquerda">
+                <h2>Sobre a matéria de Fundamentos de Banco de Dados</h2>
+                <p>O conteúdo de banco de dados aborda os principais conceitos usados para organizar, armazenar e
+                    gerenciar informações de forma estruturada. Inclui o estudo dos SGBDs, dos tipos de dados, dos
+                    modelos de representação como MER e DER, além dos principais bancos utilizados no mercado. Também
+                    envolve o uso de dicionários de dados e a criação de formulários para cadastro, simulando como as
+                    informações são registradas em sistemas reais.</p>
+            </div>
+        </section>
+        <div id="outline"></div>
         <section class="grid">
             <div class="texto-grid">
                 <h2>Sistema de Gerenciamento de Banco de Dados(SGBD)</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusamus praesentium commodi modi
-                    ipsum sit tenetur voluptatem possimus nam nostrum, mollitia, optio eius blanditiis eos veritatis,
-                    iure hic omnis. Mollitia.</p>
-            </div>
-            <div class="grid-1-2">
-                <div class="grid-1-2-item">
-                    <h3>Título do Item</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
-                </div>
-                <div class="grid-1-2-item">
-                    <h3>Título do Item</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
-                </div>
+                <p>Um SGBD (Sistema Gerenciador de Banco de Dados) é um software usado para criar, organizar, consultar
+                    e gerenciar bancos de dados. Os principais tipos são: relacional (MySQL, PostgreSQL), não relacional
+                    (MongoDB, Redis), hierárquico, orientado a objetos e em nuvem. Ele é aplicado em sistemas
+                    comerciais, sites, aplicativos, empresas e qualquer lugar que precise armazenar informações de forma
+                    segura e estruturada.</p>
             </div>
         </section>
         <!-- grid 1x3 -->
         <section class="grid">
             <div class="texto-grid">
-                <h2>principais bancos de dados</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusamus praesentium commodi modi
-                    ipsum sit tenetur voluptatem possimus nam nostrum, mollitia, optio eius blanditiis eos veritatis,
-                    iure hic omnis. Mollitia.</p>
+                <h2>Principais Bancos de Dados</h2>
+                <p>Entre os mais utilizados estão: MySQL, PostgreSQL, Oracle, SQL Server, MariaDB, MongoDB, Firebase,
+                    Redis e SQLite. Cada um tem características específicas para diferentes tipos de aplicações, desde
+                    sites simples até grandes sistemas corporativos.</p>
             </div>
             <div class="grid-1-3">
                 <div class="grid-1-3-item">
-                    <h3>Título do Item</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
+                    <h3>SQL Server</h3>
+                    <p>O SQL Server é um banco de dados relacional desenvolvido pela Microsoft, voltado para aplicações
+                        corporativas. Ele oferece alta segurança, ferramentas avançadas de administração e suporte total
+                        à linguagem SQL. É muito usado em empresas que utilizam soluções Windows e sistemas críticos que
+                        exigem desempenho e confiabilidade.</p>
                     <img src="./img/placeholder.jpg" alt="Imagem placeholder">
                 </div>
                 <div class="grid-1-3-item">
-                    <h3>Título do Item</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
+                    <h3>MongoDB</h3>
+                    <p>MongoDB é um banco de dados NoSQL, que armazena dados em documentos JSON, oferecendo maior
+                        flexibilidade do que tabelas tradicionais. Ele é ideal para sistemas que lidam com grandes
+                        volumes de dados e precisam de escalabilidade e estrutura dinâmica, como aplicações modernas e
+                        serviços em nuvem.</p>
                     <img src="./img/placeholder.jpg" alt="Imagem placeholder">
                 </div>
                 <div class="grid-1-3-item">
-                    <h3>Título do Item</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
+                    <h3>MySQL</h3>
+                    <p>MySQL é um banco de dados relacional que organiza informações em tabelas e usa a linguagem SQL. É
+                        open-source, rápido e muito utilizado em sites, aplicações web e sistemas de médio a grande
+                        porte. É conhecido pela facilidade de uso e ampla compatibilidade.</p>
                     <img src="./img/placeholder.jpg" alt="Imagem placeholder">
                 </div>
             </div>
         </section>
         <section class="grid">
             <div class="texto-grid">
-                <h2>O que é um dicionário de dados? Quais os tipos de dados de um banco de dados? </h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusamus praesentium commodi modi
-                    ipsum sit tenetur voluptatem possimus nam nostrum, mollitia, optio eius blanditiis eos veritatis,
-                    iure hic omnis. Mollitia.</p>
+                <h2>Dicionário de dados e quais os tipos de dados de um banco de dados</h2>
+                <p>O dicionário de dados é um documento que descreve cada campo do banco de dados: nome, tipo, tamanho,
+                    obrigatoriedade e significado. E os principais tipos de dados estão logo a baixo.</p>
             </div>
-            <div class="grid-1-2">
-                <div class="grid-1-2-item">
-                    <h3>O que é um dicionário de dados?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
+            <div class="grid-2-3">
+                <div class="grid-2-3-item">
+                    <h3>Texto (CHAR, VARCHAR)</h3>
+                    <p>São tipos usados para armazenar textos. CHAR guarda textos de tamanho fixo, ideal para códigos ou
+                        padrões; já VARCHAR armazena textos de tamanho variável, sendo mais eficiente para nomes,
+                        endereços e descrições.</p>
                     <img src="./img/placeholder.jpg" alt="Imagem placeholder">
                 </div>
-                <div class="grid-1-2-item">
-                    <h3>Quais os tipos de dados de um banco de dados?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
+                <div class="grid-2-3-item">
+                    <h3>Numérico (INT, FLOAT, DECIMAL)</h3>
+                    <p>Tipos numéricos armazenam valores matemáticos. INT guarda números inteiros, FLOAT armazena
+                        números com decimal porém com menor precisão, enquanto DECIMAL guarda números decimais com alta
+                        precisão, ideal para valores financeiros.</p>
+                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                </div>
+                <div class="grid-2-3-item">
+                    <h3>Lógico (BOOLEANO)</h3>
+                    <p>O tipo BOOLEANO armazena apenas dois valores: TRUE (verdadeiro) ou FALSE (falso). É usado em
+                        condições, estados e validações dentro do banco.</p>
+                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                </div>
+                <div class="grid-2-3-item">
+                    <h3>Data e horário (DATE, TIME, DATETIME)</h3>
+                    <p>Esses tipos representam tempo. DATE guarda datas, TIME guarda horários, e DATETIME combina os
+                        dois em um único valor, muito usado para registrar eventos e logs.</p>
+                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                </div>
+                <div class="grid-2-3-item">
+                    <h3>Binário (BLOB)</h3>
+                    <p>O tipo BLOB permite armazenar dados binários, como imagens, vídeos, documentos ou arquivos em
+                        geral. É útil quando o sistema precisa guardar mídias diretamente no banco de dados.</p>
                     <img src="./img/placeholder.jpg" alt="Imagem placeholder">
                 </div>
             </div>
         </section>
         <section class="grid">
             <div class="texto-grid">
-                <h2> O que é uma modelagem de banco de dados? E o modelo DER? MER? </h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusamus praesentium commodi modi
-                    ipsum sit tenetur voluptatem possimus nam nostrum, mollitia, optio eius blanditiis eos veritatis,
-                    iure hic omnis. Mollitia.</p>
+                <h2> O que é uma modelagem de banco de dados e o modelo DER e MER </h2>
+                <p>A modelagem de banco de dados é o processo de organizar e estruturar os dados antes de criá-los no
+                    sistema. O DER (Diagrama Entidade-Relacionamento) representa entidades, atributos e relacionamentos.
+                    O MER (Modelo Entidade-Relacionamento) é o modelo teórico que define como os dados se relacionam,
+                    servindo de base para o DER.</p>
             </div>
             <div class="grid-1-2">
                 <div class="grid-1-2-item">
                     <h3>modelo DER</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
+                    <p>foto e explicação
+                        <!-- Um DER típico pode incluir entidades como Cliente, Pedido e Produto. Por exemplo, um cliente faz vários pedidos, e cada pedido contém produtos. O diagrama mostra essas entidades com seus atributos (ex.: nome, CPF, código do pedido) e os relacionamentos (1:N, N:N) de forma visual. -->
+                    </p>
                     <img src="./img/placeholder.jpg" alt="Imagem placeholder">
                 </div>
                 <div class="grid-1-2-item">
                     <h3>modelo MER</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
+                    <p>foto e explicação
+                        <!-- No MER, descrevemos o modelo conceitual:
+
+                        Entidade Aluno com atributos: nome, matrícula, idade.
+
+                        Entidade Curso com atributos: código, nome.
+
+                        Relacionamento: Aluno está matriculado em Curso (N:N).
+                        Esse modelo representa a estrutura lógica dos dados antes de virar um DER. -->
+                    </p>
                     <img src="./img/placeholder.jpg" alt="Imagem placeholder">
                 </div>
             </div>
@@ -113,23 +161,23 @@
         <section>
             <h2>Exemplo de Cadastro</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aperiam temporibus modi
-            quam suscipit. Magnam dolores delectus laborum ducimus laudantium exercitationem eius fugiat
+                quam suscipit. Magnam dolores delectus laborum ducimus laudantium exercitationem eius fugiat
                 iure placeat. Itaque alias facilis sint doloremque.</p>
-                <h4>Formulário</h4>
-                <input type="text" id="nome" placeholder="Nome">
-                <input type="number" id="idade" placeholder="Idade">
-                <input type="text" id="cidade" placeholder="Cidade">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Nome</th>
-                            <th>Idade</th>
-                            <th>Cidade</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tabela"></tbody>
-                </table>
+            <h4>Formulário</h4>
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="number" id="idade" placeholder="Idade">
+            <input type="text" id="cidade" placeholder="Cidade">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Cidade</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela"></tbody>
+            </table>
             <button id="btnAdicionar">Adicionar</button>
         </section>
     </main>
