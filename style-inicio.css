@@ -48,7 +48,8 @@ header select {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     margin: 1rem 0;
-    height: 100%;
+    /* height: 100%; */
+    /* heit é a borda das grid */
 }
 .grid-item {
     border: 3px solid var(--cor-principal);
