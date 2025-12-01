@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <!-- falta código -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +31,7 @@
             </div>
         </section>
         </section>
-                <section>
+        <section>
             <div class="separador"></div>
         </section>
         <section>
@@ -44,7 +45,7 @@
             </div>
         </section>
         </section>
-                <section>
+        <section>
             <div class="separador"></div>
         </section>
         <section class="grid">
@@ -58,7 +59,7 @@
             </div>
         </section>
         </section>
-                <section>
+        <section>
             <div class="separador"></div>
         </section>
         <!-- grid 1x3 -->
@@ -76,7 +77,7 @@
                         corporativas. Ele oferece alta segurança, ferramentas avançadas de administração e suporte total
                         à linguagem SQL. É muito usado em empresas que utilizam soluções Windows e sistemas críticos que
                         exigem desempenho e confiabilidade.</p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                    <img src="./img/BDD/SQLserver.png" alt="Imagem placeholder">
                 </div>
                 <div class="grid-1-3-item">
                     <h3>MongoDB</h3>
@@ -84,19 +85,19 @@
                         flexibilidade do que tabelas tradicionais. Ele é ideal para sistemas que lidam com grandes
                         volumes de dados e precisam de escalabilidade e estrutura dinâmica, como aplicações modernas e
                         serviços em nuvem.</p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                    <img src="./img/BDD/mongoDB2.png" alt="Imagem placeholder">
                 </div>
                 <div class="grid-1-3-item">
                     <h3>MySQL</h3>
                     <p>MySQL é um banco de dados relacional que organiza informações em tabelas e usa a linguagem SQL. É
                         open-source, rápido e muito utilizado em sites, aplicações web e sistemas de médio a grande
                         porte. É conhecido pela facilidade de uso e ampla compatibilidade.</p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                    <img src="./img/BDD/mySQL.png" alt="Imagem placeholder">
                 </div>
             </div>
         </section>
         </section>
-                <section>
+        <section>
             <div class="separador"></div>
         </section>
         <section class="grid">
@@ -111,37 +112,36 @@
                     <p>São tipos usados para armazenar textos. CHAR guarda textos de tamanho fixo, ideal para códigos ou
                         padrões; já VARCHAR armazena textos de tamanho variável, sendo mais eficiente para nomes,
                         endereços e descrições.</p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
                 </div>
                 <div class="grid-2-3-item">
                     <h3>Numérico (INT, FLOAT, DECIMAL)</h3>
                     <p>Tipos numéricos armazenam valores matemáticos. INT guarda números inteiros, FLOAT armazena
                         números com decimal porém com menor precisão, enquanto DECIMAL guarda números decimais com alta
                         precisão, ideal para valores financeiros.</p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                    <img src="./img/BDD/numérico.png" alt="Imagem placeholder">
                 </div>
                 <div class="grid-2-3-item">
                     <h3>Lógico (BOOLEANO)</h3>
                     <p>O tipo BOOLEANO armazena apenas dois valores: TRUE (verdadeiro) ou FALSE (falso). É usado em
                         condições, estados e validações dentro do banco.</p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                    <img src="./img/BDD/lógico.jpg" alt="Imagem placeholder">
                 </div>
                 <div class="grid-2-3-item">
                     <h3>Data e horário (DATE, TIME, DATETIME)</h3>
                     <p>Esses tipos representam tempo. DATE guarda datas, TIME guarda horários, e DATETIME combina os
                         dois em um único valor, muito usado para registrar eventos e logs.</p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                    <img src="./img/BDD/data_horario_etc.png" alt="Imagem placeholder">
                 </div>
                 <div class="grid-2-3-item">
                     <h3>Binário (BLOB)</h3>
                     <p>O tipo BLOB permite armazenar dados binários, como imagens, vídeos, documentos ou arquivos em
                         geral. É útil quando o sistema precisa guardar mídias diretamente no banco de dados.</p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                    <img src="./img/BDD/binário.png" alt="Imagem placeholder">
                 </div>
             </div>
         </section>
         </section>
-                <section>
+        <section>
             <div class="separador"></div>
         </section>
         <section class="grid">
@@ -156,51 +156,58 @@
                 <div class="grid-1-2-item">
                     <h3>modelo DER</h3>
                     <p>foto e explicação
-                        <!-- Um DER típico pode incluir entidades como Cliente, Pedido e Produto. Por exemplo, um cliente faz vários pedidos, e cada pedido contém produtos. O diagrama mostra essas entidades com seus atributos (ex.: nome, CPF, código do pedido) e os relacionamentos (1:N, N:N) de forma visual. -->
+                        O Modelo Entidade-Relacionamento (MER) é uma representação conceitual usada para descrever as
+                        entidades de um sistema, seus atributos e os relacionamentos que existem entre elas. Ele serve
+                        para planejar a estrutura lógica dos dados antes da criação do banco de dados.
                     </p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                    <img src="./img/BDD/DER.png" alt="Imagem placeholder">
                 </div>
                 <div class="grid-1-2-item">
                     <h3>modelo MER</h3>
                     <p>foto e explicação
-                        <!-- No MER, descrevemos o modelo conceitual:
-
-                        Entidade Aluno com atributos: nome, matrícula, idade.
-
-                        Entidade Curso com atributos: código, nome.
-
-                        Relacionamento: Aluno está matriculado em Curso (N:N).
-                        Esse modelo representa a estrutura lógica dos dados antes de virar um DER. -->
+                        O Diagrama Entidade-Relacionamento (DER) é a versão gráfica do MER, usando símbolos para mostrar
+                        visualmente entidades, atributos e relacionamentos. Ele facilita a compreensão do modelo de
+                        dados e ajuda na comunicação entre analistas, desenvolvedores e usuários.
                     </p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                    <img src="./img/BDD/MER2.png" alt="Imagem placeholder">
                 </div>
             </div>
         </section>
         </section>
-                <section>
+        <section>
             <div class="separador"></div>
         </section>
         <section>
-            <h2>Exemplo de Cadastro</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aperiam temporibus modi
-                quam suscipit. Magnam dolores delectus laborum ducimus laudantium exercitationem eius fugiat
-                iure placeat. Itaque alias facilis sint doloremque.</p>
-            <h4>Formulário</h4>
-            <input type="text" id="nome" placeholder="Nome">
-            <input type="number" id="idade" placeholder="Idade">
-            <input type="text" id="cidade" placeholder="Cidade">
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>Idade</th>
-                        <th>Cidade</th>
-                    </tr>
-                </thead>
-                <tbody id="tabela"></tbody>
-            </table>
-            <button id="btnAdicionar">Adicionar</button>
+            <section class="grid">
+                <div class="texto-grid">
+                    <h2>Exemplo de Cadastro</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aperiam temporibus modi
+                        quam suscipit. Magnam dolores delectus laborum ducimus laudantium exercitationem eius fugiat
+                        iure placeat. Itaque alias facilis sint doloremque.</p>
+                </div>
+                <div class="grid-1-2">
+                    <div class="grid-1-2-item">
+                        <h3>Formulário</h3>
+                        <input type="text" id="nome" placeholder="Nome">
+                        <input type="number" id="idade" placeholder="Idade">
+                        <input type="text" id="cidade" placeholder="Cidade">
+                    </div>
+                    <div class="grid-1-2-item">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nome</th>
+                                    <th>Idade</th>
+                                    <th>Cidade</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabela"></tbody>
+                        </table>
+                        <button id="btnAdicionar">Adicionar</button>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
     <footer>
