@@ -255,6 +255,15 @@ footer {
 footer p {
     margin: 0;
 }
+.borda{
+    padding: 0.25rem;
+    outline: 2px solid var(--cor-principal);
+    border-radius: 0.5rem;
+    width: fit-content;
+}
+.borda input{
+    all: unset
+}
 
 /* responsivo */
 @media (max-width: 768px) {
