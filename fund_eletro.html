@@ -360,10 +360,11 @@
 
 -->
         <section>
-            <div class="imagem-texto">
+            <div class="imagem-texto" style="align-items: start !important;">
                 <div class="texto">
-                    <h2>Título</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
+                    <h2>Leitura de dados de um sensor analógico, acionando saídas digitais</h2>
+                    <p>O código lê a saída do potênciometro e aciona as saídas digitais que correspondem aos LEDs dependendo do nível imposto.</p>
+                    <img src="./img/eletro/rduinoUnoCodigo.png" alt="Imagem placeholder">
                 </div>
                 <div class="dropdown">
                     <div class="dropdown-header">
@@ -371,7 +372,37 @@
                         <span>▼</span>
                     </div>
                     <div class="dropdown-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
+                        <p>
+                        // C++ code <br>
+
+                        void setup() <br>
+                        {<br>
+                        pinMode(A0, INPUT);<br>
+                        pinMode(2, OUTPUT);<br>
+                        pinMode(3, OUTPUT);<br>
+                        pinMode(4, OUTPUT);<br>
+                        }<br>
+
+                        void loop()<br>
+                        {<br>
+                        Serial.println(analogRead(A0));<br>
+                        if (analogRead(A0) <= 921) {<br>
+                            digitalWrite(2, HIGH);<br>
+                            digitalWrite(3, LOW);<br>
+                            digitalWrite(4, LOW);<br>
+                        }<br>
+                        if (analogRead(A0) <= 716) {<br>
+                            digitalWrite(2, LOW);<br>
+                            digitalWrite(3, HIGH);<br>
+                            digitalWrite(4, LOW);<br>
+                        }<br>
+                        if (analogRead(A0) <= 307) {<br>
+                            digitalWrite(2, LOW);<br>
+                            digitalWrite(3, LOW);<br>
+                            digitalWrite(4, HIGH);<br>
+                        }<br>
+                        delay(10);
+}</p>
                     </div>
                 </div>
         </section>
