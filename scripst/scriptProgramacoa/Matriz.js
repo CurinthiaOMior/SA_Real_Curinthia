@@ -5,7 +5,7 @@ function gerarAleatorio2() {
     return Math.floor(Math.random() * 20) + 1
 }
 
-function gerarMatriz2() {
+function funcGerarMatriz2() {
     let matriz = []
     for (let i = 0; i < 3; i++) {
         let linha = []
@@ -18,21 +18,21 @@ function gerarMatriz2() {
 }
 
 gerarMatriz2.addEventListener('click', () => {
-    let matriz = gerarMatriz2()
+    let matriz = funcGerarMatriz2()
 
     resMatriz2.innerHTML = `
         <table>
-            <tr>
+            <tr style="display: flex; align-itens: center; justify-content: space-between; gap: 0.5rem;">
                 <td "p-2">${matriz[0][0]}</td>
                 <td "p-2">${matriz[0][1]}</td>
                 <td "p-2">${matriz[0][2]}</td>
             </tr>
-            <tr>
+            <tr style="display: flex; align-itens: center; justify-content: space-between; gap: 0.5rem;">
                 <td "p-2">${matriz[1][0]}</td>
                 <td "p-2">${matriz[1][1]}</td>
                 <td "p-2">${matriz[1][2]}</td>
             </tr>
-            <tr>
+            <tr style="display: flex; align-itens: center; justify-content: space-between; gap: 0.5rem;">
                 <td "p-2">${matriz[2][0]}</td>
                 <td "p-2">${matriz[2][1]}</td>
                 <td "p-2">${matriz[2][2]}</td>

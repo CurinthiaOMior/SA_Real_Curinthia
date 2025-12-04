@@ -3,6 +3,7 @@ let ordenarCres6 = document.getElementById('ordenarCres6')
 let gerarArr6 = document.getElementById('gerarArr6')
 let arr6 = document.getElementById('arr6')
 let arrnum6 = []
+
 function gerarAleatorio6(num) {
     let arr = []
     for (let i = 0; i < num; i++) {
@@ -10,6 +11,7 @@ function gerarAleatorio6(num) {
     }
     return arr
 }
+
 function bbsort(arr) {
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr.length - 1; j++) {
@@ -22,13 +24,16 @@ function bbsort(arr) {
     }
     return arr
 }
+
 gerarArr6.addEventListener('click', ()=>{
     arrnum6 = gerarAleatorio6(10) 
     arr6.innerHTML = arrnum6.join(", ")
 })
+
 ordenarCres6.addEventListener('click', ()=>{
-    arrnum6.innerHTML = bbsort(arrnum6)
+    arr6.innerHTML = bbsort(arrnum6)
 })
+
 ordenarDcres6.addEventListener('click', ()=>{
-    arrnum6.innerHTML = bbsort(arrnum6).reverse()
+    arr6.innerHTML = bbsort(arrnum6).reverse()
 })
