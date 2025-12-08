@@ -4,12 +4,8 @@
 }
 
 :root {
-    --cor-principal: #ff0000;
-    --cor-secundaria: #ff00007f;
-}
-
-div {
-    outline: 2px dotted purple;
+    --cor-principal: rgb(0, 0, 0);
+    --cor-secundaria: #009dff;
 }
 
 body {

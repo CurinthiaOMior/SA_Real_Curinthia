@@ -4,8 +4,15 @@
 }
 
 :root {
-    --cor-principal: #ff0000;
-    --cor-secundaria: #ff00007f;
+    --cor-principal: rgb(0, 0, 0);
+    --cor-secundaria: #009dff;
+}
+
+::selection {
+    background-color: var(--cor-principal);
+    box-shadow: 0 0 2rem var(--cor-secundaria);
+    text-shadow: 0 0 2rem var(--cor-secundaria);
+    color: var(--cor-secundaria);
 }
 
 body {
@@ -15,12 +22,10 @@ body {
 section {
     padding: 0 10%;
 }
-#home {
-    height: 100vh;
-}
 
 header {
-    background-color: white;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
     padding: 0.75rem 10%;
     border-bottom: 2px solid var(--cor-principal);
     display: flex;
@@ -29,7 +34,7 @@ header {
 }
 
 header a {
-    color: var(--cor-principal);
+    color: var(--cor-secundaria);
     font-size: 1.5rem;
     text-decoration: none;
 }
@@ -38,30 +43,59 @@ header select {
     padding: 0.5rem;
     border: 2px solid var(--cor-principal);
     border-radius: 0.5rem;
-    background-color: white;
+    background-color: var(--cor-secundaria);
     color: var(--cor-principal);
     font-size: 1rem;
 }
-/* main */
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 1rem 0;
-    /* height: 100%; */
-    /* heit é a borda das grid */
+
+#home {
+    height: 100vh;
+    background-image: url(./img/walpapers/index/download\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.5rem;
 }
-.grid-item {
-    border: 3px solid var(--cor-principal);
-    border-radius: 1rem;
-    padding: 1rem;
-    
+
+#home > *{
+    width: 100%;
 }
+
+#titulo-home h1{
+    font-size: 7.5rem;
+}
+
+#titulo-home{
+    color: var(--cor-principal);
+    text-wrap-mode: nowrap;
+    text-shadow: 0 0 1rem var(--cor-secundaria);
+}
+
+#home a{
+    padding: 0.5rem 2rem;
+    background-color: var(--cor-secundaria);
+    border-radius: 0.75rem;
+    text-decoration: none;
+    color: var(--cor-principal);
+    box-shadow: 0 0 1rem var(--cor-secundaria);
+    font-weight: bolder;
+}
+
+#home a:hover{
+    background-color: var(--cor-principal);
+        box-shadow: 0 0 1rem var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+
 footer {
-    background-color: white;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
     padding: 1rem 10%;
     text-align: center;
-    border-top: 2px solid var(--cor-principal);
+    border-top: 2px solid var(--cor-secundaria);
 }
 
 footer p {

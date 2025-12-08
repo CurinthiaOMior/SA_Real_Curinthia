@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <a href="./index.html">Meu Site</a>
+        <a href="./index.html">Inicio</a>
         <select onchange="window.location.href=this.value">
             <option value="">Selecione uma seção</option>-
             <option value="./fund_BDD.html">Fundamentos de Bancos de Dados</option>
@@ -270,25 +270,22 @@
         <section class="grid">
             <div class="texto-grid">
                 <h2>O que é um diodo, um Diodo LED e um display 7 segmentos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusamus praesentium commodi modi
-                    ipsum sit tenetur voluptatem possimus nam nostrum, mollitia, optio eius blanditiis eos veritatis,
-                    iure hic omnis. Mollitia.</p>
             </div>
             <div class="grid-1-3">
                 <div class="grid-1-3-item">
                     <h3>diodo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                    <p>Um diodo é um componente eletrônico que permite a passagem de corrente elétrica em apenas um sentido. Ele funciona como uma “válvula” da eletrônica.</p>
+                    <img src="./img/eletro/diodoImagemPequena.jpg" alt="Imagem placeholder">
                 </div>
                 <div class="grid-1-3-item">
                     <h3>Diodo LED</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                    <p>O LED (Light Emitting Diode) é um tipo especial de diodo que, além de conduzir corrente em um único sentido, emite luz quando está conduzindo.</p>
+                    <img src="./img/eletro/DiodoLedPequeno.jpg" alt="Imagem placeholder">
                 </div>
                 <div class="grid-1-3-item">
                     <h3>display 7 segmentos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
-                    <img src="./img/placeholder.jpg" alt="Imagem placeholder">
+                    <p>Um display de 7 segmentos é um dispositivo formado por sete pequenos LEDs organizados em forma de número 8.</p>
+                    <img src="./img/eletro/DisplayLed7Seg.webp" alt="Imagem placeholder">
                 </div>
             </div>
         </section>
@@ -322,8 +319,8 @@
                             <input id="resistencia" type="Number" placeholder="Resistencia(R)">
                         </div>
                     </div>
-                    
-                    
+
+
 
                     <br>
                     <button id="calc1">Calcular</button>
@@ -332,7 +329,7 @@
                     <h3>cálculo da Potência a partir de valores de tensão, resistência e corrente</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio necessitatibus.</p>
                     <div>
-                        
+
                         <div class="borda">
                             <label for="tensao2">Tensão: </label>
                             <input id="tensao2" type="Number" placeholder="Tensão(V)">
@@ -350,7 +347,7 @@
                     </div>
                     <br>
                     <p style="font-size: 1.5rem;" id="resP"></p>
-                    
+
                     <br>
                     <button id="calc2">Calcular</button>
                 </div>
@@ -363,7 +360,8 @@
             <div class="imagem-texto" style="align-items: start !important;">
                 <div class="texto">
                     <h2>Leitura de dados de um sensor analógico, acionando saídas digitais</h2>
-                    <p>O código lê a saída do potênciometro e aciona as saídas digitais que correspondem aos LEDs dependendo do nível imposto.</p>
+                    <p>O código lê a saída do potênciometro e aciona as saídas digitais que correspondem aos LEDs
+                        dependendo do nível imposto.</p>
                     <img src="./img/eletro/rduinoUnoCodigo.png" alt="Imagem placeholder">
                 </div>
                 <div class="dropdown">
@@ -373,36 +371,36 @@
                     </div>
                     <div class="dropdown-content">
                         <p>
-                        // C++ code <br>
+                            // C++ code <br>
 
-                        void setup() <br>
-                        {<br>
-                        pinMode(A0, INPUT);<br>
-                        pinMode(2, OUTPUT);<br>
-                        pinMode(3, OUTPUT);<br>
-                        pinMode(4, OUTPUT);<br>
-                        }<br>
+                            void setup() <br>
+                            {<br>
+                            pinMode(A0, INPUT);<br>
+                            pinMode(2, OUTPUT);<br>
+                            pinMode(3, OUTPUT);<br>
+                            pinMode(4, OUTPUT);<br>
+                            }<br>
 
-                        void loop()<br>
-                        {<br>
-                        Serial.println(analogRead(A0));<br>
-                        if (analogRead(A0) <= 921) {<br>
-                            digitalWrite(2, HIGH);<br>
-                            digitalWrite(3, LOW);<br>
-                            digitalWrite(4, LOW);<br>
-                        }<br>
-                        if (analogRead(A0) <= 716) {<br>
-                            digitalWrite(2, LOW);<br>
-                            digitalWrite(3, HIGH);<br>
-                            digitalWrite(4, LOW);<br>
-                        }<br>
-                        if (analogRead(A0) <= 307) {<br>
-                            digitalWrite(2, LOW);<br>
-                            digitalWrite(3, LOW);<br>
-                            digitalWrite(4, HIGH);<br>
-                        }<br>
-                        delay(10);
-}</p>
+                            void loop()<br>
+                            {<br>
+                            Serial.println(analogRead(A0));<br>
+                            if (analogRead(A0) <= 921) {<br>
+                                digitalWrite(2, HIGH);<br>
+                                digitalWrite(3, LOW);<br>
+                                digitalWrite(4, LOW);<br>
+                                }<br>
+                                if (analogRead(A0) <= 716) {<br>
+                                    digitalWrite(2, LOW);<br>
+                                    digitalWrite(3, HIGH);<br>
+                                    digitalWrite(4, LOW);<br>
+                                    }<br>
+                                    if (analogRead(A0) <= 307) {<br>
+                                        digitalWrite(2, LOW);<br>
+                                        digitalWrite(3, LOW);<br>
+                                        digitalWrite(4, HIGH);<br>
+                                        }<br>
+                                        delay(10);
+                                        }</p>
                     </div>
                 </div>
         </section>
